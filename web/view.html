@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>View Raw Data</title>
+    <script src="viewController.js"></script>
+    <style type="text/css">
+        .subtleSet {
+            border-radius: 10px;
+            width: 17em;
+        }
+        th {
+            text-align: right;
+        }
+        .sub {
+            width: 20em;
+        }
+        .rawData {
+            float: left;
+
+        }
+        .StatisticData {
+            float: left;
+            padding-left: 15em;
+        }
+        table {
+            width: 20em;
+
+        }
+    </style>
+</head>
+<div>
+<h1>View Raw Data</h1>
+<ul >
+    <li><a href="/setup.html">Setup Sensors</a> </li>
+    <li><a href="/tol.html">Set Tolderences</a> </li>
+</ul>
+<div class="rawData">
+<table id="viewTable" border="1">
+    <caption>Raw Sensor Data:</caption>
+    <tr>
+        <th>Temperature:</th>
+        <th>Humidity:</th>
+        <th>Light:</th>
+    </tr>
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th><p></p></th>
+    </tr>
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th><p></p></th>
+    </tr>
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th><p></p></th>
+    </tr>
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th><p></p></th>
+    </tr>
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th><p></p></th>
+    </tr>
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th><p></p></th>
+    </tr>
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th><p></p></th>
+    </tr>
+    <tr>
+        <th>  </th>
+        <th>  </th>
+        <th><P></P></th>
+    </tr>
+</table>
+</div>
+<div class="StatisticData">
+<table id="tempStat" border="1">
+    <caption>Temperature Statistics:</caption>
+    <tr>
+        <th>Sum:</th>
+        <th>Mean:</th>
+        <th>Sd:</th>
+    </tr>
+    <tr>
+        <td id="tsum"></td>
+        <td id="tmean"></td>
+        <td id="tsd"></td>
+    </tr>
+</table>
+<table id="humidStat" border="1">
+    <caption>Humidity Statistics:</caption>
+    <tr>
+        <th>Sum:</th>
+        <th>Mean:</th>
+        <th>Sd:</th>
+    </tr>
+    <tr>
+        <td id="hsum"></td>
+        <td id="hmean"></td>
+        <td id="hsd"></td>
+    </tr>
+</table>
+<table id="lightStat" border="1">
+    <caption>Light Statistics:</caption>
+    <tr>
+        <th>Sum:</th>
+        <th>Mean:</th>
+        <th>Sd:</th>
+    </tr>
+    <tr>
+        <td id="lsum"></td>
+        <td id="lmean"></td>
+        <td id="lsd"></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
